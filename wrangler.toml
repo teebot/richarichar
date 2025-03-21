@@ -1,0 +1,9 @@
+name = "richarichar"
+compatibility_date = "2025-03-21"
+
+[site]
+bucket = "./"
+
+[env.production]
+name = "richarichar-prod"
+route = "richarichar.com/*"
