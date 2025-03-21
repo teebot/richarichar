@@ -72,7 +72,34 @@ nav {
 
 /* Home section */
 #home {
-    background-color: #f8f8f8;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#home h1,
+#home .tagline,
+#home .bio,
+#home .cta-button {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#home .bio {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+#home .cta-button {
+    border-color: #fff;
+}
+
+#home .cta-button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 h1 {
@@ -84,6 +111,18 @@ h1 {
 .tagline {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+}
+
+.bio {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.bio p {
+    margin-bottom: 1rem;
 }
 
 .cta-button {
