@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RICHARICHAR Links</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "IBM Plex Mono", monospace;
+        background-color: #1c1c1c;
+        color: #fff;
+        line-height: 1.6;
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 680px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .profile {
+        margin-bottom: 2rem;
+      }
+
+      .profile h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 2px;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      .link {
+        background-color: #333;
+        color: #fff;
+        padding: 1.2rem;
+        text-decoration: none;
+        border: 1px solid #444;
+        transition: all 0.3s ease;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 100%;
+        display: inline-block;
+      }
+
+      .link:hover {
+        background-color: #444;
+        transform: translateY(-2px);
+      }
+
+      .link.soon {
+        background-color: #222;
+        cursor: not-allowed;
+        opacity: 0.7;
+      }
+
+      .link.soon:hover {
+        transform: none;
+      }
+
+      .website-link {
+        margin-top: 2rem;
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+
+      .website-link:hover {
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 20px;
+        }
+
+        .profile h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <h1>RICHARICHAR</h1>
+      </div>
+
+      <div class="links">
+        <a
+          href="https://www.instagram.com/richaricharmusic"
+          class="link"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+        <a
+          href="https://www.facebook.com/richaricharmusic/"
+          class="link"
+          target="_blank"
+          rel="noopener"
+        >
+          Facebook
+        </a>
+        <div class="link soon">Spotify (Soon)</div>
+        <div class="link soon">Apple Music (Soon)</div>
+      </div>
+
+      <a href="/" class="website-link">← Back to Website</a>
+    </div>
+  </body>
+</html>
