@@ -150,10 +150,20 @@ h1 {
 }
 
 .tour-date {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Define consistent column widths */
+    gap: 1rem; /* Add spacing between columns */
     padding: 1rem 0;
     border-bottom: 1px solid #000;
+    align-items: center; /* Align content vertically */
+}
+
+.date {
+    text-align: left;
+}
+
+.location {
+    text-align: right;
 }
 
 .tour-date.past {
@@ -278,4 +288,4 @@ footer {
     .video-grid {
         grid-template-columns: 1fr;
     }
-} 
+}
