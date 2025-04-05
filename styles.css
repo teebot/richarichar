@@ -67,8 +67,7 @@ main {
 
 /* Sections */
 .section {
-  min-height: 100vh;
-  padding: 6rem 2rem 2rem;
+  padding: 3rem 2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +76,23 @@ main {
 #epk {
   max-width: 650px;
   margin: 0 auto;
+}
+
+.odd {
+  background: #0b0b0b;
+}
+
+.odd h2 {
+  color: #fff;
+}
+
+.odd .content {
+  color: #fff;
+}
+
+#bio .content {
+  max-width: 650px;
+  text-align: left;
 }
 
 .content {
@@ -97,6 +113,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  min-height: 100vh;
 }
 
 @media (min-width: 769px) {
