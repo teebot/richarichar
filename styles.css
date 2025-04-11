@@ -117,7 +117,7 @@ main {
 }
 
 .home-logo {
-  max-width: 80%;
+  max-width: 400px;
   height: auto;
   margin-bottom: 2rem;
   filter: brightness(0) invert(1); /* This makes the logo white */
@@ -126,6 +126,12 @@ main {
 @media (min-width: 769px) {
   #home {
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-logo {
+    max-width: 300px;
   }
 }
 
