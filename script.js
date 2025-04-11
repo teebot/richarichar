@@ -33,3 +33,17 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Toggle bio sections
+document.querySelectorAll(".bio-toggle").forEach((toggle) => {
+  const content = toggle.nextElementSibling;
+  const icon = toggle.querySelector(".toggle-icon");
+
+  if (content && icon) {
+    toggle.addEventListener("click", () => {
+      const isHidden = content.style.display === "none";
+      content.style.display = isHidden ? "block" : "none";
+      icon.textContent = isHidden ? "▾" : "▸";
+    });
+  }
+});

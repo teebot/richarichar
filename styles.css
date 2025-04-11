@@ -168,6 +168,10 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.bio-toggle {
+  cursor: pointer;
+}
+
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
