@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /epk.html$
 
 # Sitemaps
 Sitemap: https://richarichar.com/sitemap.xml
