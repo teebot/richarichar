@@ -47,3 +47,89 @@ document.querySelectorAll(".bio-toggle").forEach((toggle) => {
     });
   }
 });
+
+// Load and render tour dates
+async function loadTourDates() {
+  try {
+    const response = await fetch("tour-dates.json");
+    const tourDates = await response.json();
+
+    const tourDatesContainer = document.querySelector(".tour-dates");
+    if (!tourDatesContainer) return;
+
+    // Clear existing content
+    tourDatesContainer.innerHTML = "";
+
+    // Format date from ISO to display format (e.g., "JUNE 19 2025")
+    function formatDate(isoDate) {
+      const date = new Date(isoDate);
+      const months = [
+        "JAN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAY",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OCT",
+        "NOV",
+        "DEC",
+      ];
+      const month = months[date.getMonth()];
+      const day = date.getDate();
+      const year = date.getFullYear();
+      return `${month} ${day} ${year}`;
+    }
+
+    // Check if date is in the past
+    function isPastDate(isoDate) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0); // Reset time to start of day
+      const tourDate = new Date(isoDate);
+      return tourDate < today;
+    }
+
+    // Separate upcoming and past dates
+    const upcomingDates = tourDates.filter(
+      (tourDate) => !isPastDate(tourDate.date)
+    );
+    const pastDates = tourDates.filter((tourDate) => isPastDate(tourDate.date));
+
+    // Sort upcoming dates by ascending order
+    upcomingDates.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    // Sort past dates by descending order (most recent first)
+    pastDates.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Render upcoming dates
+    upcomingDates.forEach((tourDate) => {
+      const tourDateElement = document.createElement("div");
+      tourDateElement.className = "tour-date";
+      tourDateElement.innerHTML = `
+        <span class="date">${formatDate(tourDate.date)}</span>
+        <span class="venue">${tourDate.venue}</span>
+        <span class="location">${tourDate.location}</span>
+      `;
+      tourDatesContainer.appendChild(tourDateElement);
+    });
+
+    // Render past dates
+    pastDates.forEach((tourDate) => {
+      const tourDateElement = document.createElement("div");
+      tourDateElement.className = "tour-date past";
+      tourDateElement.innerHTML = `
+        <span class="date">${formatDate(tourDate.date)}</span>
+        <span class="venue">${tourDate.venue}</span>
+        <span class="location">${tourDate.location}</span>
+      `;
+      tourDatesContainer.appendChild(tourDateElement);
+    });
+  } catch (error) {
+    console.error("Error loading tour dates:", error);
+  }
+}
+
+// Load tour dates when the page loads
+document.addEventListener("DOMContentLoaded", loadTourDates);
