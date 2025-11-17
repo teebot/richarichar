@@ -21,9 +21,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 1000;
-  border-bottom: 1px solid #000;
   min-height: var(--nav-height); /* Use the nav height variable */
 }
 
@@ -39,6 +38,7 @@ nav {
 .logo {
   font-weight: 600;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .nav-links {
@@ -49,7 +49,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -107,13 +107,24 @@ main {
 
 /* Home section */
 #home {
+  position: relative;
+  color: #fff;
+  min-height: 100vh;
+}
+
+#home::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/background2.jpg");
+    url("./images/new_low_cover.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
-  min-height: 100vh;
+  z-index: -1;
 }
 
 .home-logo {
