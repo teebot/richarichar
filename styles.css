@@ -18,8 +18,8 @@ body {
 
 /* Navigation */
 nav {
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   width: 100%;
   background-color: transparent;
   z-index: 1000;
