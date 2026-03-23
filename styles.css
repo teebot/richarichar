@@ -210,6 +210,21 @@ h1 {
   color: #fff;
 }
 
+.streaming-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.streaming-links a {
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+.streaming-links a:hover {
+  opacity: 0.6;
+}
+
 /* Live section */
 .tour-dates {
   margin-top: 2rem;
@@ -230,6 +245,15 @@ h1 {
 
 .location {
   text-align: right;
+}
+
+a.tour-date {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.tour-date .venue {
+  text-decoration: underline;
 }
 
 .tour-date.past {

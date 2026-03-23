@@ -103,28 +103,36 @@ async function loadTourDates() {
     // Sort past dates by descending order (most recent first)
     pastDates.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    // Render upcoming dates
-    upcomingDates.forEach((tourDate) => {
-      const tourDateElement = document.createElement("div");
-      tourDateElement.className = "tour-date";
-      tourDateElement.innerHTML = `
+    // Render a single tour date entry
+    function renderTourDate(tourDate, className) {
+      const content = `
         <span class="date">${formatDate(tourDate.date)}</span>
         <span class="venue">${tourDate.venue}</span>
         <span class="location">${tourDate.location}</span>
       `;
-      tourDatesContainer.appendChild(tourDateElement);
+
+      if (tourDate.link) {
+        const tourDateElement = document.createElement("a");
+        tourDateElement.href = tourDate.link;
+        tourDateElement.className = className;
+        tourDateElement.innerHTML = content;
+        return tourDateElement;
+      }
+
+      const tourDateElement = document.createElement("div");
+      tourDateElement.className = className;
+      tourDateElement.innerHTML = content;
+      return tourDateElement;
+    }
+
+    // Render upcoming dates
+    upcomingDates.forEach((tourDate) => {
+      tourDatesContainer.appendChild(renderTourDate(tourDate, "tour-date"));
     });
 
     // Render past dates
     pastDates.forEach((tourDate) => {
-      const tourDateElement = document.createElement("div");
-      tourDateElement.className = "tour-date past";
-      tourDateElement.innerHTML = `
-        <span class="date">${formatDate(tourDate.date)}</span>
-        <span class="venue">${tourDate.venue}</span>
-        <span class="location">${tourDate.location}</span>
-      `;
-      tourDatesContainer.appendChild(tourDateElement);
+      tourDatesContainer.appendChild(renderTourDate(tourDate, "tour-date past"));
     });
   } catch (error) {
     console.error("Error loading tour dates:", error);
