@@ -35,17 +35,34 @@ window.addEventListener("scroll", () => {
 });
 
 // Toggle bio sections
-document.querySelectorAll(".bio-toggle").forEach((toggle) => {
-  const content = toggle.nextElementSibling;
-  const icon = toggle.querySelector(".toggle-icon");
+function setBioState(bioEl, open) {
+  const content = bioEl.querySelector(".bio-content");
+  const icon = bioEl.querySelector(".toggle-icon");
+  if (!content || !icon) return;
+  content.style.display = open ? "block" : "none";
+  icon.textContent = open ? "▾" : "▸";
+}
 
-  if (content && icon) {
-    toggle.addEventListener("click", () => {
-      const isHidden = content.style.display === "none";
-      content.style.display = isHidden ? "block" : "none";
-      icon.textContent = isHidden ? "▾" : "▸";
-    });
-  }
+function openBioByLang(lang) {
+  document.querySelectorAll(".biography[data-lang]").forEach((bio) => {
+    setBioState(bio, bio.dataset.lang === lang);
+  });
+}
+
+// Init from hash, default to "en"
+const bioLang = location.hash.replace("#", "") || "en";
+if (["en", "fr", "nl"].includes(bioLang)) {
+  openBioByLang(bioLang);
+}
+
+// Click toggles
+document.querySelectorAll(".bio-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const bio = toggle.closest(".biography");
+    const content = bio.querySelector(".bio-content");
+    const isHidden = content.style.display === "none";
+    setBioState(bio, isHidden);
+  });
 });
 
 // Load and render tour dates
