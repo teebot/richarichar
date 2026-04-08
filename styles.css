@@ -135,6 +135,53 @@ nav {
   border-radius: 4px;
 }
 
+/* Record 3D flip */
+.record-flip {
+  margin-top: calc(-2 * var(--nav-height));
+  width: 400px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.record-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.record-flip.flipped .record-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.record-flip-front,
+.record-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.record-flip-back {
+  transform: rotateY(180deg);
+}
+
+.record-flip-front img,
+.record-flip-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (min-width: 769px) {
   #home {
     background-attachment: fixed;
@@ -144,6 +191,10 @@ nav {
 @media (max-width: 768px) {
   .home-logo {
     max-width: 300px;
+  }
+
+  .record-flip {
+    width: 300px;
   }
 }
 
