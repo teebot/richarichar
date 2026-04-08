@@ -1,0 +1,203 @@
+- main [ref=e2]:
+  - generic [ref=e4]:
+    - heading "Post-punk quintet from Liège & Brussels" [level=1] [ref=e5]
+    - img "RICHARICHAR band" [ref=e7]
+    - generic [ref=e8]:
+      - heading "BIO" [level=2] [ref=e9]
+      - paragraph [ref=e10]: RICHARICHAR draws from a lineage of modern post-punk acts such as Fontaines D.C. and Protomartyr, while reaching back to influences like Iggy Pop and the Velvet Underground.
+      - paragraph [ref=e11]: These five regulars of the Belgian independent rock circuit (Eosine, It It Anita, Empereur, Two Kids on Holiday, Pirato Ketchup…) explore the dark corners of contemporary alienation, shaping a sound that is at once abrasive and fragile — where restraint collides with sudden bursts of intensity, and where the lyrics treat both modernity and nostalgia with equal contempt.
+      - paragraph [ref=e12]: Following the release of their debut EP, Paraphernalia, in March 2026, the band is actively carving out their presence on European stages.
+    - heading "BIO FRANÇAIS ▸" [level=2] [ref=e14] [cursor=pointer]
+    - heading "BIO NEDERLANDS ▸" [level=2] [ref=e16] [cursor=pointer]
+    - generic [ref=e17]:
+      - heading "LIVE ACT" [level=2] [ref=e18]
+      - paragraph [ref=e19]: Known for intense and dynamic performances
+      - paragraph [ref=e20]: "Played at: OM, Micro Festival, Rockerill"
+      - generic [ref=e21]:
+        - iframe [ref=e23]:
+          - generic [active] [ref=f10e1]:
+            - generic "YouTube Video Player" [ref=f10e3]
+            - generic [ref=f10e5]:
+              - generic:
+                - generic:
+                  - button "Play video" [ref=f10e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f10e12] [cursor=pointer]
+                  - generic [ref=f10e14]:
+                    - generic [ref=f10e19]:
+                      - generic [ref=f10e20]:
+                        - link "Richarichar - Paraphernalia @ Mom, Liège (live)" [ref=f10e21] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=_8UZWZPHZZk
+                        - link "RICHARICHAR" [ref=f10e22] [cursor=pointer]:
+                          - /url: /channel/UC07dTjpiMuqjfmaEjwGum8w
+                          - generic [ref=f10e23]: RICHARICHAR
+                      - generic [ref=f10e24]:
+                        - button [ref=f10e25] [cursor=pointer]
+                        - generic [ref=f10e27]:
+                          - generic: RICHARICHAR
+                          - generic: 58 subscribers
+                    - generic [ref=f10e28]:
+                      - button "Share" [ref=f10e31] [cursor=pointer]:
+                        - generic [ref=f10e35]:
+                          - img
+                      - link "Watch on YouTube" [ref=f10e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=_8UZWZPHZZk
+                        - generic [ref=f10e45]:
+                          - text: Watch on
+                          - img [ref=f10e47]:
+                            - generic [ref=f10e49]:
+                              - img
+        - iframe [ref=e25]:
+          - generic [active] [ref=f11e1]:
+            - generic "YouTube Video Player" [ref=f11e3]
+            - generic [ref=f11e5]:
+              - generic:
+                - generic:
+                  - button "Play video" [ref=f11e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f11e12] [cursor=pointer]
+                  - generic [ref=f11e14]:
+                    - generic [ref=f11e19]:
+                      - generic [ref=f11e20]:
+                        - link "Richarichar - Poised @ Mom, Liège (live)" [ref=f11e21] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=RII7qIBeAb8
+                        - link "RICHARICHAR" [ref=f11e22] [cursor=pointer]:
+                          - /url: /channel/UC07dTjpiMuqjfmaEjwGum8w
+                          - generic [ref=f11e23]: RICHARICHAR
+                      - generic [ref=f11e24]:
+                        - button [ref=f11e25] [cursor=pointer]
+                        - generic [ref=f11e27]:
+                          - generic: RICHARICHAR
+                          - generic: 58 subscribers
+                    - generic [ref=f11e28]:
+                      - button "Share" [ref=f11e31] [cursor=pointer]:
+                        - generic [ref=f11e35]:
+                          - img
+                      - link "Watch on YouTube" [ref=f11e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=RII7qIBeAb8
+                        - generic [ref=f11e45]:
+                          - text: Watch on
+                          - img [ref=f11e47]:
+                            - generic [ref=f11e49]:
+                              - img
+    - generic [ref=e26]:
+      - heading "MUSIC VIDEO" [level=2] [ref=e27]
+      - iframe [ref=e30]:
+        - generic [active] [ref=f12e1]:
+          - generic "YouTube Video Player" [ref=f12e3]
+          - generic [ref=f12e5]:
+            - generic:
+              - generic:
+                - button "Play video" [ref=f12e10] [cursor=pointer]
+                - button "Hide player controls" [ref=f12e12] [cursor=pointer]
+                - generic [ref=f12e14]:
+                  - generic [ref=f12e19]:
+                    - generic [ref=f12e20]:
+                      - link "RICHARICHAR - NEW LOW (Official Music Video)" [ref=f12e21] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=7-ToUgreMkk
+                      - link "RICHARICHAR" [ref=f12e22] [cursor=pointer]:
+                        - /url: /channel/UC07dTjpiMuqjfmaEjwGum8w
+                        - generic [ref=f12e23]: RICHARICHAR
+                    - generic [ref=f12e24]:
+                      - button [ref=f12e25] [cursor=pointer]
+                      - generic [ref=f12e27]:
+                        - generic: RICHARICHAR
+                        - generic: 58 subscribers
+                  - generic [ref=f12e28]:
+                    - button "Share" [ref=f12e31] [cursor=pointer]:
+                      - generic [ref=f12e35]:
+                        - img
+                    - link "Watch on YouTube" [ref=f12e42] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=7-ToUgreMkk
+                      - generic [ref=f12e45]:
+                        - text: Watch on
+                        - img [ref=f12e47]:
+                          - generic [ref=f12e49]:
+                            - img
+    - generic [ref=e31]:
+      - heading "MUSIC" [level=2] [ref=e32]
+      - iframe [ref=e33]: <a href="https://richaricharmusic.bandcamp.com/album/paraphernalia-ep" >Paraphernalia EP by RICHARICHAR</a >:
+        - generic [ref=f13e2]:
+          - generic:
+            - link:
+              - /url: https://richaricharmusic.bandcamp.com/album/paraphernalia-ep?from=embed
+            - link [ref=f13e5] [cursor=pointer]:
+              - /url: https://richaricharmusic.bandcamp.com/album/paraphernalia-ep?from=embed
+          - generic [ref=f13e7]:
+            - generic [ref=f13e8]:
+              - link [ref=f13e9] [cursor=pointer]:
+                - /url: https://richaricharmusic.bandcamp.com/album/paraphernalia-ep?from=embed
+              - generic [ref=f13e11]:
+                - link [ref=f13e12] [cursor=pointer]:
+                  - /url: https://richaricharmusic.bandcamp.com/album/paraphernalia-ep?from=embed
+                - link "Paraphernalia EP" [ref=f13e15] [cursor=pointer]:
+                  - /url: https://richaricharmusic.bandcamp.com/album/paraphernalia-ep?from=embed
+                - generic [ref=f13e16]:
+                  - link "buy" [ref=f13e18] [cursor=pointer]:
+                    - /url: https://richaricharmusic.bandcamp.com/album/paraphernalia-ep?action=buy&from=embed
+                  - link "share" [ref=f13e20] [cursor=pointer]:
+                    - /url: https://richaricharmusic.bandcamp.com/album/paraphernalia-ep?action=share&from=embed
+                - text: by
+                - generic [ref=f13e21]:
+                  - text: from
+                  - generic [ref=f13e22]: by RICHARICHAR
+                - generic [ref=f13e23]:
+                  - generic [ref=f13e24]:
+                    - generic [ref=f13e25]: "3."
+                    - generic [ref=f13e26]: Paraphernalia
+                  - generic [ref=f13e27]:
+                    - generic [ref=f13e28]: 00:00
+                    - generic [ref=f13e29]: / 03:12
+            - text: /
+    - generic [ref=e34]:
+      - heading "HIGHLIGHTS" [level=2] [ref=e35]
+      - list [ref=e36]:
+        - listitem [ref=e37]: Winner of the SPHERES SONORES FINALS 2024 (selected among 100+ bands)
+        - listitem [ref=e38]: Opened for the legendary UK band The Damned at OM, Liege
+        - listitem [ref=e39]: Part of Micro Festival 2025 line-up
+        - listitem [ref=e40]: Debut EP Paraphernalia released March 2026
+    - generic [ref=e41]:
+      - heading "BOOKING" [level=2] [ref=e42]
+      - paragraph [ref=e43]: Available for booking (clubs, festivals, support slots)
+      - paragraph [ref=e44]: "Contact us: richaricharmusic@gmail.com"
+      - paragraph [ref=e45]:
+        - emphasis [ref=e46]: Note for FWB promoters, RICHARICHAR is part of the "Art & Vie" programme.
+    - generic [ref=e47]:
+      - heading "SOCIALS" [level=2] [ref=e48]
+      - iframe [ref=e50]:
+        - generic [ref=f14e2]:
+          - heading "RICHARICHAR" [level=1] [ref=f14e4]
+          - generic [ref=f14e5]:
+            - link "Spotify" [ref=f14e6] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/4plmWBEKn6dN7OtE3SacfK?si=ZkZO79oeRRWLxiPiyolPxQ
+            - link "Apple Music" [ref=f14e7] [cursor=pointer]:
+              - /url: https://music.apple.com/be/artist/richarichar/1853611732
+            - link "YOUTUBE" [ref=f14e8] [cursor=pointer]:
+              - /url: https://www.youtube.com/@richaricharmusic/videos
+            - link "Instagram" [ref=f14e9] [cursor=pointer]:
+              - /url: https://www.instagram.com/richaricharmusic
+            - link "Facebook" [ref=f14e10] [cursor=pointer]:
+              - /url: https://www.facebook.com/richaricharmusic/
+            - link "Soundcloud" [ref=f14e11] [cursor=pointer]:
+              - /url: https://soundcloud.com/richarichar
+          - link "← Back to Website" [ref=f14e12] [cursor=pointer]:
+            - /url: /
+      - img "RICHARICHAR band" [ref=e52]
+    - generic [ref=e53]:
+      - heading "TECHNICAL RIDER" [level=2] [ref=e54]
+      - paragraph [ref=e55]:
+        - link "View Technical Rider" [ref=e56] [cursor=pointer]:
+          - /url: https://docs.google.com/document/d/1cj4Bg0X2cUVCgN3bGwFmwZZ8qpniXrtbQX0e3h4OQcI/edit?tab=t.0
+    - generic [ref=e57]:
+      - heading "PROMO MATERIAL 🗂️" [level=2] [ref=e58]
+      - list [ref=e59]:
+        - listitem [ref=e60]:
+          - link "LOGO (Illustator)" [ref=e61] [cursor=pointer]:
+            - /url: epk/RICHAR_LOGO_A4.ai
+        - listitem [ref=e62]:
+          - link "LOGO (PDF)" [ref=e63] [cursor=pointer]:
+            - /url: epk/RICHAR_LOGO_A4.pdf
+        - listitem [ref=e64]:
+          - link "Band pic 1" [ref=e65] [cursor=pointer]:
+            - /url: epk/RICHARICHAR-BAND 01.jpg
+        - listitem [ref=e66]:
+          - link "Band pic 2" [ref=e67] [cursor=pointer]:
+            - /url: epk/RICHARICHAR-BAND 02.jpg

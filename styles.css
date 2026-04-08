@@ -385,11 +385,7 @@ footer {
   }
 }
 
-.biography,
-.highlights,
-.booking,
-.resources,
-.socials {
+.epk-section {
   margin-top: 60px;
 }
 
@@ -407,4 +403,14 @@ footer {
 
 .iframe-container {
   margin-top: 20px;
+}
+
+.photo-credit {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 6px;
+}
+
+#epk .video-grid {
+  grid-template-columns: 1fr;
 }
